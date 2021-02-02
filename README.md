@@ -28,3 +28,7 @@ Projet pédagogique pour étudiant apprenti développeur.
 * Pas de problématique de déploiement (à dockeriser ?)
 
 Initié au lycée Léonard de Vinci - 77000 Melun
+
+###Point d'entrée
+
+![copie ecran](./images/projet-attendus.png)

@@ -1,4 +1,4 @@
-#Geoworld 
+# Geoworld 
 
 ![world](./images/world-logo.png)
 
@@ -6,13 +6,13 @@
 
 Projet pédagogique pour étudiant apprenti développeur.
 
-###Prérequis :
+### Prérequis :
 
 * Base de PHP
 * Base de SQL
 * Base de HTML/CSS
 
-###Prétention du projet
+### Prétention du projet
 
 * Apprendre à travailler sur la base d'un existant simple
 * Apprendre à respecter des conventions de codage
@@ -20,7 +20,7 @@ Projet pédagogique pour étudiant apprenti développeur.
 * Développer la créativité
 * Un peu de méthodologie (user story, trello, phpcs, ...)
 
-###Limite du projet 
+### Limite du projet 
 
 * Pas d'usage de framework pour la structuration du projet 
 * Pas de prise en compte de la sécurité au début du projet
@@ -29,6 +29,6 @@ Projet pédagogique pour étudiant apprenti développeur.
 
 Initié au lycée Léonard de Vinci - 77000 Melun
 
-###Point d'entrée
+### Point d'entrée
 
 ![copie ecran](./images/projet-attendus.png)

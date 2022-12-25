@@ -23,7 +23,7 @@ $desPays = getCountriesByContinent($continent);
 <main role="main" class="flex-shrink-0">
 
   <div class="container">
-    <h1>Les pays en Asie</h1>
+    <h1 onclick="info(this)">Les pays en Asie</h1>
     <div>
      <table class="table">
          <tr>
@@ -49,7 +49,7 @@ $desPays = getCountriesByContinent($continent);
     </p>
     <section class="jumbotron">
       <div class="container">
-        <h1 class="jumbotron-heading">Tableau d'objets</h1>
+        <h1 class="jumbotron-heading" onclick="info(this)">Tableau d'objets</h1>
         <p>Le contenu ci-dessus représente une vue "debug" du premier élément d'un tableau. Ce tableau est
           constitué d'objets PHP "standard" (stdClass).</p>
         <p>Pour accéder à l'<b>attribut</b> d'un <b>objet</b> on utilisera le symbole <b><code>-></code></b>.

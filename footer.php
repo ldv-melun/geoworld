@@ -15,7 +15,7 @@
 ?><hr />
 <footer class="footer mt-auto py-3">
   <div class="container">
-    <span class="text-muted">&copy;2019-2021 SIO SLAM MyWebApp</span>
+    <span class="text-muted">&copy;2023 SIO SLAM MyWebApp</span>
   </div>
 </footer>
 

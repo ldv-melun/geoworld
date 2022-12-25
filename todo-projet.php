@@ -54,7 +54,7 @@
             <h5 style="text-align: center; ">Schéma relationnel de la base de données</h5>
             <img class="img-fluid" src="images/worldSR.png">
             <p></p>
-            <p>Télécharger ici : <a href="doc/world-database.zip">Base de données : schema + data</a></p>
+            <p>Les scripts de création du schéma relationnel et des données initialies sont dans le dossier <code>doc/</code> du projet.</p>
         </div>
     </div>
 
@@ -83,6 +83,7 @@
         <div class="box shadow p-3" style="margin-left: 3rem; margin-top: 2rem">
             <div class="ribbon blue"><span>Travaux 1</span></div>
             <p>(durée ~4h à 8h)</p>
+            <h4 style="text-align: center; ">(Avant de passer en mode projet)</h4>
             <h5 style="text-align: center; ">Travaux imposés</h5>
             <h6 style="text-align: center; ">(phase à réaliser seul)</h6>
             <ol>
@@ -112,7 +113,7 @@
             </ol> 
 
             <p>À l'issue de ce travail, vous serez prêt à vous engager plus en avant dans ce projet,
-                à concevoir de vrai récit utilisateur qui guideront vos travaux.</p>
+                à implémenter et concevoir de vrais récits utilisateur qui guideront vos travaux.</p>
 
         </div>
     </div>

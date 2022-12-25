@@ -12,12 +12,11 @@
  * @link      https://github.com/sio-melun/geoworld
  */
 
-
 ini_set('display_errors', 1);
 define('DB_NAME', 'geoworld');
 define('DB_DSN', 'mysql:host=localhost;dbname=' . DB_NAME . ';charset=utf8');
-define('DB_USER', 'sio');
-define('DB_PASSWORD', 'sio');
+define('DB_USER', 'appuser');
+define('DB_PASSWORD', 'ThePassword');
 define('DEBUG', true);
 
 /**
@@ -33,7 +32,7 @@ function connect() : array
     $opt = array(
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, //ASSOC,
-    PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+    // PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
     PDO::ATTR_EMULATE_PREPARES => false
     );
     try {

@@ -12,7 +12,7 @@
  * @category  Database_Access_Function
  * @package   Application
  * @author    SIO-SLAM <sio@ldv-melun.org>
- * @copyright 2019-2021 SIO-SLAM
+ * @copyright 2019-2023 SIO-SLAM
  * @license   http://opensource.org/licenses/gpl-license.php GNU Public License
  * @link      https://github.com/sio-melun/geoworld
  */
@@ -22,6 +22,25 @@
  *  cette fonction est déportée dans un autre script.
  */
 require_once 'connect-db.php';
+
+
+// Exemple d'une fonction sans paramètre, avec documentation technique PhpDoc  
+
+/**
+ * Obtenir la liste des pays
+ *
+ * @return liste d'objets de type StdClass représentant un Country 
+ */
+function getAllCountries()
+{
+    global $pdo;
+    $query = 'SELECT * FROM Country;';
+    return $pdo->query($query)->fetchAll();
+}
+
+
+
+// Exemple d'une fonction paramétrée, avec documentation technique PhpDoc  
 
 /**
  * Obtenir la liste de tous les pays référencés d'un continent donné
@@ -47,16 +66,4 @@ function getCountriesByContinent($continent)
 
     // on retourne un tableau d'objets (car spécifié dans connect-db.php)
     return $prep->fetchAll();
-}
-
-/**
- * Obtenir la liste des pays
- *
- * @return liste d'objets
- */
-function getAllCountries()
-{
-    global $pdo;
-    $query = 'SELECT * FROM Country;';
-    return $pdo->query($query)->fetchAll();
 }

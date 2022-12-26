@@ -35,6 +35,46 @@ Opérationnels sur votre machine :
 
 Initié au lycée Léonard de Vinci - 77000 Melun
 
+
+### Variables d'environnement
+
+Pour des raisons pratiques, assurez-vous d'avoir accès aux programmes `mysql` et `php` à partir de la ligne de command.
+
+Exemple pour `mysql` :
+
+```
+$ mysql -V
+
+mysql  Ver 8.0.31-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+```
+
+
+Exemple pour `php` :
+
+```
+$ php -v
+
+PHP 8.1.2-1ubuntu2.9 (cli) (built: Oct 19 2022 14:58:09) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.9, Copyright (c), by Zend Technologies
+```
+
+Si vous recevez un message system qui vous informe qu'il ne reconnait pas les comamndes `php` et/ou `mysql`, alors vous devez configurer la variable d'environnement `PATH` en conséquences.  Exemple de procédure sous windows 10 :
+
+Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivre ces étapes:
+
+1. Appuyez sur la touche Windows + X et sélectionnez "Système".
+2. Dans la fenêtre qui s'ouvre, cliquez sur "Paramètres avancés du système".
+3. Dans la nouvelle fenêtre qui s'ouvre, cliquez sur "Variables d'environnement".
+4. Dans la section "Variables d'environnement", recherchez la variable `Path` dans la liste des variables système et sélectionnez-la. Cliquez sur "Modifier".
+5. Dans la fenêtre "Modifier la variable d'environnement", cliquez sur "Nouveau" et ajoutez le chemin d'accès complet au répertoire contenant les fichiers exécutables PHP et MySQL. Par exemple, si PHP et MySQL sont installés dans le répertoire `C:\php\bin` et `C:\wamp`, vous devriez ajouter ces deux chemins d'accès à la liste. Exemple pour `mysql`, les exécutables sont dans le dossier `bin` : `C:\wamp\bin\database\mysql\mysql-5.5.9\bin`
+6. Cliquez sur "OK" pour fermer toutes les fenêtres et enregistrer les modifications.
+7. Une fois ces étapes terminées, fermer toutes les fenêtres d'invite de commandes car ces fenêtres sont basées sur les anciennes valeurs des variables d'environnement.
+8. **Ouvrir une nouvelle fenêtre d'invite de commandes (console, terminal)**
+À partir de la nouvelle invite de commande, vous devriez être en mesure de lancer la commande `php -v` et `mysql -V` depuis n'importe quel emplacement de votre système. Si vous rencontrez toujours des problèmes, assurez-vous que PHP et MySQL sont correctement installés et que les chemins d'accès que vous avez ajoutés à la variable d'environnement PATH sont corrects.
+
+
 ### Installation (tiers DB)
 
 Dans le dossier `/doc` vous trouverez les scripts `MysSQL` pour créer le schéma de la base de données et un autre pour insérer des données.
@@ -64,7 +104,7 @@ mysql> create user 'appuser'@'%' identified by 'ThePassword';
 ```
 mysql> grant all on geoworld.* to 'appuser'@'%';
 ```
-Remarque : Les droits gagneraient à être moins large...
+Remarque : En production, les droits gagneraient à être moins large...
 
 5. Test de connexion (le mot de passe doit être saisi en ligne de commande)
 ```
@@ -91,28 +131,23 @@ $ cd geoworld
 
 Se placer dans le dossier de l'application, ouvrir une console (terminal).
 
+*Prerequis 1* : La base de données `geoworld` a été précédemment créée, elle est vide.
+
+*Prerequis 2* : L'utilisateuer `appuser` existe et a des droits sur la base de données `geoworld`.
+
 1. Création du schéma relationnel de la base de données (les tables)
 
 ```
-$ sudo mysql geoworld < doc/world-schema.sql
+$ mysql -u appuser -p geoworld < doc/world-schema.sql
 ```
 
-ou
-
-```
-$ mysql -u root geoworld < doc/world-schema.sql
-```
 
 2. Insertion des données (lignes des tables)
 
+(rappel : _nous sommes en ligne de commande_) 
 ```
-$ sudo mysql geoworld < doc/world-data.sql
+$ mysql -u appuser -p geoworld < doc/world-data.sql
 ```
-ou
-```
-$ mysql -u root geoworld < doc/world-data.sql
-```
-
 
 ### Test de l'application (tiers Application backend)
 

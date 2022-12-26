@@ -60,9 +60,9 @@ Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2-1ubuntu2.9, Copyright (c), by Zend Technologies
 ```
 
-Si vous recevez un message système qui vous informe qu'il ne reconnait pas les comamndes `php` et/ou `mysql`, alors vous devez configurer la variable d'environnement `PATH` en conséquences.  Exemple de procédure sous windows 10 :
+Si vous recevez un message système qui vous informe qu'il ne reconnait pas les commandes `php` et/ou `mysql`, alors vous devez configurer la variable d'environnement `PATH` en conséquences. Exemple de procédure sous windows 10 :
 
-Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivre ces étapes:
+Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivre ces étapes :
 
 1. Appuyez sur la touche Windows + X et sélectionnez "Système".
 2. Dans la fenêtre qui s'ouvre, cliquez sur "Paramètres avancés du système".
@@ -70,7 +70,7 @@ Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivr
 4. Dans la section "Variables d'environnement", recherchez la variable `Path` dans la liste des variables système et sélectionnez-la. Cliquez sur "Modifier".
 5. Dans la fenêtre "Modifier la variable d'environnement", cliquez sur "Nouveau" et ajoutez le chemin d'accès complet au répertoire contenant les fichiers exécutables PHP et MySQL. Par exemple, si PHP et MySQL sont installés dans le répertoire `C:\php\bin` et `C:\wamp`, vous devriez ajouter ces deux chemins d'accès à la liste. Exemple pour `mysql`, les exécutables seraient dans le dossier bin : `C:\wamp\bin\database\mysql\mysql-5.5.9\bin`
 6. Cliquez sur "OK" pour fermer toutes les fenêtres et enregistrer les modifications.
-7. Une fois ces étapes terminées, fermer toutes les fenêtres d'invite de commandes car ces fenêtres sont basées sur les anciennes valeurs des variables d'environnement.
+7. Une fois ces étapes terminées, fermer toutes les fenêtres d'invite de commandes, car ces fenêtres sont basées sur les anciennes valeurs des variables d'environnement.
 8. **Ouvrir une nouvelle fenêtre d'invite de commandes (console, terminal)**
 À partir de la nouvelle invite de commande, vous devriez être en mesure de lancer la commande `php -v` et `mysql -V` depuis n'importe quel emplacement de votre système. Si vous rencontrez toujours des problèmes, assurez-vous que PHP et MySQL sont correctement installés et que les chemins d'accès que vous avez ajoutés à la variable d'environnement PATH sont corrects.
 
@@ -133,9 +133,9 @@ $ cd geoworld
 
 Se placer dans le dossier de l'application, ouvrir une console (terminal).
 
-*Prerequis 1* : La base de données `geoworld` a été précédemment créée, elle est vide.
+*Prérequis 1* : La base de données `geoworld` a été précédemment créée, elle est vide.
 
-*Prerequis 2* : L'utilisateuer `appuser` existe et a des droits sur la base de données `geoworld`.
+*Prérequis 2* : L'utilisateur `appuser` existe et a des droits sur la base de données `geoworld`.
 
 1. Création du schéma relationnel de la base de données (les tables)
 
@@ -167,4 +167,4 @@ php -S localhost:8000
 
 ### Point d'entrée de l'application
 
-![copie ecran](./images/projet-attendus.png)
+![copie écran](./images/projet-attendus.png)

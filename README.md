@@ -60,7 +60,7 @@ Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2-1ubuntu2.9, Copyright (c), by Zend Technologies
 ```
 
-Si vous recevez un message system qui vous informe qu'il ne reconnait pas les comamndes `php` et/ou `mysql`, alors vous devez configurer la variable d'environnement `PATH` en conséquences.  Exemple de procédure sous windows 10 :
+Si vous recevez un message système qui vous informe qu'il ne reconnait pas les comamndes `php` et/ou `mysql`, alors vous devez configurer la variable d'environnement `PATH` en conséquences.  Exemple de procédure sous windows 10 :
 
 Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivre ces étapes:
 
@@ -112,6 +112,8 @@ mysql> exit
 $ mysql -u appuser geoworld -p
 ```
 
+Vous pouvez maintenant quitter `mysql`.
+
 ### Installation de l'application (tiers Application Backend)
 
 Se placer dans un dossier de travail, ouvrir une console (terminal).
@@ -141,7 +143,6 @@ Se placer dans le dossier de l'application, ouvrir une console (terminal).
 $ mysql -u appuser -p geoworld < doc/world-schema.sql
 ```
 
-
 2. Insertion des données (lignes des tables)
 
 (rappel : _nous sommes en ligne de commande_) 
@@ -161,7 +162,6 @@ php -S localhost:8000
 2. Connexion à l'application
 
 À l'aide d'un navigateur, ouvrir l'URL : [localhost:8000](localhost:8000)
-
 
 ### Point d'entrée de l'application
 

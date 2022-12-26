@@ -68,7 +68,7 @@ Pour configurer la variable d'environnement PATH sous Windows 10, veuillez suivr
 2. Dans la fenêtre qui s'ouvre, cliquez sur "Paramètres avancés du système".
 3. Dans la nouvelle fenêtre qui s'ouvre, cliquez sur "Variables d'environnement".
 4. Dans la section "Variables d'environnement", recherchez la variable `Path` dans la liste des variables système et sélectionnez-la. Cliquez sur "Modifier".
-5. Dans la fenêtre "Modifier la variable d'environnement", cliquez sur "Nouveau" et ajoutez le chemin d'accès complet au répertoire contenant les fichiers exécutables PHP et MySQL. Par exemple, si PHP et MySQL sont installés dans le répertoire `C:\php\bin` et `C:\wamp`, vous devriez ajouter ces deux chemins d'accès à la liste. Exemple pour `mysql`, les exécutables sont dans le dossier `bin` : `C:\wamp\bin\database\mysql\mysql-5.5.9\bin`
+5. Dans la fenêtre "Modifier la variable d'environnement", cliquez sur "Nouveau" et ajoutez le chemin d'accès complet au répertoire contenant les fichiers exécutables PHP et MySQL. Par exemple, si PHP et MySQL sont installés dans le répertoire `C:\php\bin` et `C:\wamp`, vous devriez ajouter ces deux chemins d'accès à la liste. Exemple pour `mysql`, les exécutables seraient dans le dossier bin : `C:\wamp\bin\database\mysql\mysql-5.5.9\bin`
 6. Cliquez sur "OK" pour fermer toutes les fenêtres et enregistrer les modifications.
 7. Une fois ces étapes terminées, fermer toutes les fenêtres d'invite de commandes car ces fenêtres sont basées sur les anciennes valeurs des variables d'environnement.
 8. **Ouvrir une nouvelle fenêtre d'invite de commandes (console, terminal)**
@@ -129,7 +129,7 @@ $ git clone https://github.com/sio-melun/geoworld.git
 $ cd geoworld
 ```
 
-### Initialisation de la base de données  (tiers DB)
+### Initialisation de la base de données (tiers DB)
 
 Se placer dans le dossier de l'application, ouvrir une console (terminal).
 
@@ -138,6 +138,8 @@ Se placer dans le dossier de l'application, ouvrir une console (terminal).
 *Prerequis 2* : L'utilisateuer `appuser` existe et a des droits sur la base de données `geoworld`.
 
 1. Création du schéma relationnel de la base de données (les tables)
+
+Une bonne façon de tester les droits de l'utilisateur `appuser` sur `geoworld`.  
 
 ```
 $ mysql -u appuser -p geoworld < doc/world-schema.sql

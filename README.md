@@ -154,9 +154,9 @@ $ mysql -u appuser -p geoworld < doc/world-data.sql
 
 ### Test de l'application (tiers Application backend)
 
-Se placer dans le dossier de l'application, ouvrir une console (terminal).
+Se placer **dans le dossier de l'application**, ouvrir une console (terminal).
 
-1. Lancement de l'application
+1. Lancement de l'application (un serveur HTTP qui sait interpréter du code PHP)
 ```
 php -S localhost:8000
 ```

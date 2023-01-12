@@ -18,7 +18,7 @@ Opérationnels sur votre machine :
 * git 
 * un IDE 
 
-### Prétention du projet
+### Obectifs du projet
 
 * Apprendre à travailler sur la base d'un existant simple
 * Apprendre à respecter des conventions de codage
@@ -35,10 +35,9 @@ Opérationnels sur votre machine :
 
 Initié au lycée Léonard de Vinci - 77000 Melun
 
-
 ### Variables d'environnement
 
-Pour des raisons pratiques, assurez-vous d'avoir accès aux programmes `mysql` et `php` à partir de la ligne de command.
+Pour des raisons pratiques, assurez-vous d'avoir accès aux programmes `mysql` et `php` à partir de la **ligne de command**.
 
 Exemple pour `mysql` :
 
@@ -114,6 +113,7 @@ $ mysql -u appuser geoworld -p
 
 Vous pouvez maintenant quitter `mysql`.
 
+
 ### Installation de l'application (tiers Application Backend)
 
 Se placer dans un dossier de travail, ouvrir une console (terminal).
@@ -124,9 +124,24 @@ Se placer dans un dossier de travail, ouvrir une console (terminal).
 $ git clone https://github.com/sio-melun/geoworld.git
 ```
 
-2. se placer dans le nouveau dossier
+Remarque : vous pouvez aussi télécharger le projet au format `.zip`, qu'il faudra ensuite décompresser.
+
+2. se placer dans le nouveau dossier (dossier de l'application)
+
 ```
 $ cd geoworld
+```
+
+(vérifier l'arborescence des dossiers de geoworld)
+```
+├── assets
+│   └── bootstrap-5.1.3-dist
+│       ├── css
+│       └── js
+├── css
+├── doc
+├── images
+└── inc
 ```
 
 ### Initialisation de la base de données (tiers DB)
@@ -152,14 +167,16 @@ $ mysql -u appuser -p geoworld < doc/world-schema.sql
 $ mysql -u appuser -p geoworld < doc/world-data.sql
 ```
 
+
 ### Test de l'application (tiers Application backend)
 
 Se placer **dans le dossier de l'application**, ouvrir une console (terminal).
 
-1. Lancement de l'application (un serveur HTTP qui sait interpréter du code PHP)
+1. À partir de la racine de l'application, lancement d'un service HTTP sachant interpréter du code PHP
 ```
 php -S localhost:8000
 ```
+(où placer le dossier du projet dans la racine de publication d'apache (`www`) si vous avez une telle solution opérationnelle sur votre machine)
 
 2. Connexion à l'application
 

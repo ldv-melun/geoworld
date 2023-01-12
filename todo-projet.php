@@ -87,30 +87,16 @@
             <h5 style="text-align: center; ">Travaux imposés</h5>
             <h6 style="text-align: center; ">(phase à réaliser seul)</h6>
             <ol>
-              <li>Connectez-vous à Trello, et créer un tableau sur la base de 
+              <li>Connectez-vous à Trello, et créer un tableau sur la base de
               ce <a href="https://trello.com/b/60112446ccfede1a8658fbbd/okpu/recommend">modèle Trello GEOWORLD</a>
                - Par la suite, vous l'adapterez selon votre besoin.
               </li>
-                <li>Téléchager les scripts SQL de la base de données de démarrage (format mysql)</li>
-                <li>Créer une base de données, et initialiser cette dernière à l'aide de ces 2 scripts</li>
+              <li> Suivre les instructions d'installation : <a href="https://github.com/ldv-melun/geoworld#readme">README du projet</a> </li>
+<!--                <li>Téléchager les scripts SQL de la base de données de démarrage (format mysql)</li>-->
+<!--                <li>Créer une base de données, et initialiser cette dernière à l'aide de ces 2 scripts</li>-->
                 <li>Le code de <code>connect-db.php</code> devra être <b>Adapté</b> en conséquence</li>
-                <li>Réaliser les premiers récits utilisateur (<b>user stories</b>) présentés dans la <b>colonne story</b> du tableau de bord Trello </li>
-                <!-- <li>Poursuivre la programmation de <code>index.php</code> afin de présenter à l'utilisateur la liste
-                    des pays du continent asiatique.
-                </li>
-                <li>Ajouter une entrée dans la barre de menu afin de permettre à l'utilisateur de sélectionner un
-                    continent (parmi une liste de continents) et d'en afficher les pays.
-                    <br/>Contraintes (impacte les 3 tiers de l'architecture Web) :
-                    <ol>
-                        <li>Adapter le <b><code>Dropdown</code></b> de la barre de menu afin de lister les continents
-                        </li>
-                        <li>Faire en sorte que la liste des continents soit obtenue par un appel à une fonction
-                            nommée <code>getContinets()</code> (que vous devez concevoir et ajouter à <code>manager-db.php</code>)
-                            qui retourne un tableau des noms de continents sur la base d'une requête <code>SQL</code>
-                        </li>
-                    </ol>
-                </li>-->
-            </ol> 
+                <li>Réaliser les activités présentées dans la colonne <b>TDs préliminaires</b> du tableau de bord Trello </li>
+            </ol>
 
             <p>À l'issue de ce travail, vous serez prêt à vous engager plus en avant dans ce projet,
                 à implémenter et concevoir de vrais récits utilisateur qui guideront vos travaux.</p>

@@ -13,10 +13,10 @@
  */
 
 ?>
-<script src="assets/library/jquery-3.4.1.js"> </script>
-<script src="assets/bootstrap-4.4.1-dist/js/bootstrap.js"> </script>
 
-<script> 
+<script src="assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"> </script>
+
+<script>
 function info(e) { console.log(e.getAttribute("class")); }
 </script>
 

@@ -121,7 +121,7 @@ Se placer dans un dossier de travail, ouvrir une console (terminal).
 1. Installez l'application `geoworld` dans ce dossier.
 
 ```
-$ git clone https://github.com/sio-melun/geoworld.git
+$ git clone https://github.com/ldv-melun/geoworld.git
 ```
 
 Remarque : vous pouvez aussi télécharger le projet au format `.zip`, qu'il faudra ensuite décompresser.
